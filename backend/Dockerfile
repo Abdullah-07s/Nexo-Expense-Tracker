@@ -8,6 +8,7 @@ RUN ./mvnw dependency:go-offline -B
 COPY src ./src
 RUN ./mvnw clean package -DskipTests
 
+
 # Run stage
 FROM eclipse-temurin:21-jre
 WORKDIR /app
